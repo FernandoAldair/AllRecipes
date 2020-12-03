@@ -15,4 +15,18 @@
         android:name="com.example.allrecipes.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/recetaListFragment"
+        android:name="com.example.allrecipes.RecetaListFragment"
+        android:label="fragment_receta_list"
+        tools:layout="@layout/fragment_receta_list" >
+        <action
+            android:id="@+id/action_recetaListFragment_to_insertarRecetaFragment"
+            app:destination="@id/insertarRecetaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertarRecetaFragment"
+        android:name="com.example.allrecipes.InsertarRecetaFragment"
+        android:label="fragment_insertar_receta"
+        tools:layout="@layout/fragment_insertar_receta" />
 </navigation>
