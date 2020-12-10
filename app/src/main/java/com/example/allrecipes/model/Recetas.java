@@ -1,4 +1,4 @@
-package com.example.allrecipes;
+package com.example.allrecipes.model;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -20,7 +20,4 @@ public class Recetas {
         this.tiempo = tiempo;
         this.valoracion = valoracion;
     }
-
-
-
 }

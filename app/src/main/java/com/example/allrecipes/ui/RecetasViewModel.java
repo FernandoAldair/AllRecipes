@@ -1,4 +1,4 @@
-package com.example.allrecipes;
+package com.example.allrecipes.ui;
 
 import android.app.Application;
 import android.net.Uri;

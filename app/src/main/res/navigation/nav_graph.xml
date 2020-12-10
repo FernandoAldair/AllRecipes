@@ -3,21 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.allrecipes.LoginFragment"
+        android:name="com.example.allrecipes.ui.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
     <fragment
         android:id="@+id/menuFragment"
-        android:name="com.example.allrecipes.MenuFragment"
+        android:name="com.example.allrecipes.ui.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" />
     <fragment
         android:id="@+id/recetaListFragment"
-        android:name="com.example.allrecipes.RecetaListFragment"
+        android:name="com.example.allrecipes.ui.RecetaListFragment"
         android:label="fragment_receta_list"
         tools:layout="@layout/fragment_receta_list" >
         <action
@@ -26,7 +26,16 @@
     </fragment>
     <fragment
         android:id="@+id/insertarRecetaFragment"
-        android:name="com.example.allrecipes.InsertarRecetaFragment"
+        android:name="com.example.allrecipes.ui.InsertarRecetaFragment"
         android:label="fragment_insertar_receta"
         tools:layout="@layout/fragment_insertar_receta" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.allrecipes.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

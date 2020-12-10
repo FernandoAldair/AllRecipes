@@ -1,8 +1,10 @@
-package com.example.allrecipes;
+package com.example.allrecipes.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.allrecipes.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.allrecipes;
+package com.example.allrecipes.ui;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.allrecipes.R;
 import com.example.allrecipes.databinding.FragmentRecetaListBinding;
 
 public class RecetaListFragment extends Fragment {

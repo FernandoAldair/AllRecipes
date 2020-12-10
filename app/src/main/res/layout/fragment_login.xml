@@ -9,14 +9,15 @@
     android:paddingTop="@dimen/fragment_vertical_margin"
     android:paddingRight="@dimen/fragment_horizontal_margin"
     android:paddingBottom="@dimen/fragment_vertical_margin"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/Diseño">
 
 
 
     <QuickContactBadge
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center"
         android:layout_margin="20dp"/>
 
@@ -77,7 +78,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="olvidaste la contaseña?"
+            android:text="¿Olvidaste la contaseña?"
             android:layout_marginLeft="10dp"/>
 
     </LinearLayout>
@@ -117,14 +118,12 @@
                 android:id="@+id/login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:text="Login"/>
 
             <Button
                 android:id="@+id/Register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:enabled="false"
                 android:text="create"/>
         </LinearLayout>
 
