@@ -9,7 +9,11 @@
         android:id="@+id/loginFragment"
         android:name="com.example.allrecipes.ui.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
     <fragment
         android:id="@+id/menuFragment"
         android:name="com.example.allrecipes.ui.MenuFragment"
@@ -38,4 +42,14 @@
             android:id="@+id/action_splashFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.example.allrecipes.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" />
+    <fragment
+        android:id="@+id/menuFragment2"
+        android:name="com.example.allrecipes.MenuFragment"
+        android:label="fragment_menu2"
+        tools:layout="@layout/fragment_menu2" />
 </navigation>
